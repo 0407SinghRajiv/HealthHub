@@ -1,77 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrationActivity">
+    tools:context=".RegistratonActivity">
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="31dp"
-      android:text="Register"
-      android:textColor="@color/black"
-      android:textSize="20sp"
-      android:textStyle="bold"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.498"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.2" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
 
-  <TextView
-      android:layout_width="257dp"
-      android:layout_height="51dp"
-      android:gravity="center"
-      android:text="We will send you an OTP for verification on your Mobile"
-      android:textColor="@color/black"
-      android:textSize="14sp"
-      android:textStyle="normal"
-      app:layout_constraintBottom_toTopOf="@+id/otpTextView"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/main"
-      app:layout_constraintVertical_bias="0.4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/register"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
-  <TextView
-      android:id="@+id/otpTextView"
-      android:layout_width="wrap_content"
-      android:layout_height="40dp"
-      android:gravity="center"
-      android:text="+91"
-      android:textColor="@color/black"
-      android:textSize="16sp"
-      android:textStyle="bold"
-      app:layout_constraintEnd_toStartOf="@+id/phoneEditText"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/main"
-      app:layout_constraintVertical_bias="0.6" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/we_will_send_otp_to_your_mobile_number"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
 
-  <EditText
-      android:id="@+id/phoneEditText"
-      android:layout_width="105dp"
-      android:layout_height="37dp"
-      android:background="@color/cardview_light_background"
-      android:hint="9897523456"
-      android:imeOptions="actionDone"
-      android:inputType="number"
-      android:textSize="16sp"
-      android:textStyle="bold"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toEndOf="@+id/otpTextView"
-      app:layout_constraintTop_toBottomOf="@id/main"
-      app:layout_constraintVertical_bias="0.6" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/enter_your_mobile_number"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
 
-  <Button
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_margin="30dp"
-      android:text="Send OTP"
-      android:textStyle="bold"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/phoneEditText"
-      app:layout_constraintVertical_bias="0.2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:gravity="center"
+          android:text="+91-"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:textColor="@color/black"/>
+      <EditText
+          android:id="@+id/input_mobile_num"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:background="@color/white"
+          android:hint="1234567890"
+          android:imeOptions="actionDone"
+          android:importantForAutofill="no"
+          android:inputType="number"
+          android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/otp_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send OTP"
+        android:layout_margin="30dp"
+        android:textStyle="bold"/>
+
+
+  </LinearLayout>
+
+
+
+
+</ScrollView>
