@@ -39,9 +39,9 @@ public class RegistratonActivity extends AppCompatActivity {
                     return;
                 }
 
-                Intent intent = new Intent(RegistratonActivity.this, otp_verification.class);
-                intent.putExtra("mobile",mobile);
-                startActivity(intent);
+                //Intent intent = new Intent(RegistratonActivity.this, otp_verification.class);
+                //intent.putExtra("mobile",mobile);
+                //startActivity(intent);
             }
         });
     }

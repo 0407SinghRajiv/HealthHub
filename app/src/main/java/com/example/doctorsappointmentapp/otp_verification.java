@@ -97,9 +97,9 @@ public class otp_verification extends AppCompatActivity {
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         // Sign-in succeeded, navigate to the Dashboard
-                        Intent intent = new Intent(otp_verification.this, dashboard.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        startActivity(intent);
+                       // Intent intent = new Intent(otp_verification.this, dashboard.class);
+                        //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        //startActivity(intent);
                     } else {
                         // Sign-in failed, display a message and update the UI
                         Toast.makeText(otp_verification.this, "Verification failed, please try again.", Toast.LENGTH_LONG).show();

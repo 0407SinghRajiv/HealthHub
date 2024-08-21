@@ -13,20 +13,27 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/aapointment"
+            android:layout_marginTop="5dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Book An Appointment"
+            android:text="@string/book_an_appointment"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"/>
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"/>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Enter Patient Name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/enter_patient_name"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -34,9 +41,10 @@
             android:layout_marginTop="20dp"/>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Enter Mobile Number"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/enter_mobile_number"
+            android:inputType="number"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -44,9 +52,9 @@
             android:layout_marginTop="20dp"/>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Address"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/address"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -54,9 +62,9 @@
             android:layout_marginTop="20dp"/>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Disease"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/disease"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -67,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Book Appointment"
+            android:text="@string/book_appointment"
             android:layout_margin="30dp"
             android:gravity="center"
             android:textStyle="bold"

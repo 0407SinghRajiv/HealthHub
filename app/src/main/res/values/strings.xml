@@ -4,4 +4,10 @@
     <string name="we_will_send_otp_to_your_mobile_number">We will Send OTP to your Mobile Number</string>
     <string name="register">Register</string>
     <string name="otp_verification">OTP Verification</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_patient_name">Enter Patient Name</string>
+    <string name="book_an_appointment">Book An Appointment</string>
+    <string name="address">Address</string>
+    <string name="disease">Disease</string>
+    <string name="book_appointment">Book Appointment</string>
 </resources>
