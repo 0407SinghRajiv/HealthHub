@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="#d6e6f7"
     android:layout_height="match_parent"
     tools:context=".AppointBook">
 
@@ -15,9 +16,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/aapointment"
-            android:layout_marginTop="5dp"/>
+            android:layout_height="300dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/d2" />
 
         <TextView
             android:layout_width="wrap_content"
