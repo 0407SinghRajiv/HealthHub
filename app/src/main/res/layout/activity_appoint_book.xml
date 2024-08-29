@@ -32,6 +32,7 @@
             android:textSize="20dp"/>
 
         <EditText
+            android:id="@+id/pat_name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/shape"
@@ -43,6 +44,7 @@
             android:layout_marginTop="20dp"/>
 
         <EditText
+            android:id="@+id/mobnum"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/shape"
@@ -55,6 +57,7 @@
             android:layout_marginTop="20dp"/>
 
         <EditText
+            android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/shape"
@@ -66,6 +69,7 @@
             android:layout_marginTop="20dp"/>
 
         <EditText
+            android:id="@+id/disease"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/shape"
@@ -77,6 +81,7 @@
             android:layout_marginTop="20dp"/>
 
         <Button
+            android:id="@+id/bookappoint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
